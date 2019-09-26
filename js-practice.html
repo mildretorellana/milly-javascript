@@ -63,6 +63,34 @@ function makeName(first, middle, last) {
 console.log(makeName("Sylvia", "Flores", "Orellana"));
 console.log(makeName("Robert","\"Beto", "O'Rourke"));
 
+//function: make better name 
+function makeBetterName (first, middle, last) {
+    if (middle.length === 1) {
+       //adding and updating
+       middle = middle + ".";
+       let nameFull = first + " " + middle + " " + last;
+        return nameFull;
+    } else{
+        let nameFull = first + " " + middle + " " + last;
+        return nameFull;
+    }
+}
+console.log(makeBetterName("Joan", "Marie","Larkin"));
+console.log(makeBetterName("Donald", "F", "Trump"));
+  
+
+function whoWon(home, away) {
+    if (home > away) {
+        let whoWon = "The home team won"
+        return whoWon
+    } else {
+        return "The away team won"
+    }
+}
+
+
+
+
 
 </script>
 </body>
