@@ -61,7 +61,7 @@ function makeName(first, middle, last) {
     return nameFull;
 }
 console.log(makeName("Sylvia", "Flores", "Orellana"));
-console.log(makeName("Robert","\"Beto", "O'Rourke"));
+console.log(makeName("Robert","\"Beto\"", "O'Rourke"));
 
 //function: make better name 
 function makeBetterName (first, middle, last) {
@@ -78,15 +78,31 @@ function makeBetterName (first, middle, last) {
 console.log(makeBetterName("Joan", "Marie","Larkin"));
 console.log(makeBetterName("Donald", "F", "Trump"));
   
-
+/* Basic score function
 function whoWon(home, away) {
     if (home > away) {
         let whoWon = "The home team won"
         return whoWon
     } else {
         return "The away team won"
+    } 
+}
+*/ 
+
+function whoWon(home, away) {
+    if (home > away) {
+        let whoWon = "The home team won"
+        return whoWon
+    } else if (home < away) {
+        let whoWon = "The away team won"
+        return whoWon
+    } else {
+        return "Both teams tied"
     }
 }
+console.log(whoWon(5, 2))
+console.log(whoWon(3, 4))
+console.log(whoWon(3, 3))
 
 
 
